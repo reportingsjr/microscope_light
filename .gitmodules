@@ -1,0 +1,4 @@
+[submodule "agg-kicad"]
+	path = agg-kicad
+	url = git@github.com:reportingsjr/agg-kicad.git
+	branch = master

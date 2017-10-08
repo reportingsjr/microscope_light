@@ -143,12 +143,12 @@ $EndDescr
 $Comp
 L TPS61090 IC?
 U 1 1 59D90497
-P 6300 1700
-F 0 "IC?" H 6300 2625 50  0000 C CNN
-F 1 "TPS61090" H 6300 2534 50  0000 C CNN
-F 2 "agg:QFN-16-EP-TI" H 6000 800 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps61090.pdf" H 6000 700 50  0001 L CNN
-	1    6300 1700
+P 7130 1690
+F 0 "IC?" H 7130 2615 50  0000 C CNN
+F 1 "TPS61090" H 7130 2524 50  0000 C CNN
+F 2 "agg:QFN-16-EP-TI" H 6830 790 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61090.pdf" H 6830 690 50  0001 L CNN
+	1    7130 1690
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -474,4 +474,8 @@ Wire Wire Line
 Wire Wire Line
 	2450 2040 2310 2040
 Connection ~ 2310 2040
+Text Label 4440 1240 0    50   ~ 0
+Vout
+Wire Wire Line
+	4260 1240 4440 1240
 $EndSCHEMATC

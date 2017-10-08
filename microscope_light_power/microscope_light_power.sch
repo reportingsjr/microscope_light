@@ -474,4 +474,60 @@ Wire Wire Line
 Wire Wire Line
 	2450 2040 2310 2040
 Connection ~ 2310 2040
+Text Label 5110 1090 0    50   ~ 0
+Vout
+Wire Wire Line
+	4260 1240 4490 1240
+$Comp
+L C_Small C?
+U 1 1 59DC8009
+P 4750 1250
+F 0 "C?" H 4610 1330 50  0000 L CNN
+F 1 "10uF" H 4540 1180 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4750 1250 50  0001 C CNN
+F 3 "" H 4750 1250 50  0001 C CNN
+	1    4750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59DC8053
+P 4990 1250
+F 0 "C?" H 4850 1330 50  0000 L CNN
+F 1 "10uF" H 4780 1180 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4990 1250 50  0001 C CNN
+F 3 "" H 4990 1250 50  0001 C CNN
+	1    4990 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4990 1090 4990 1150
+Wire Wire Line
+	4490 1090 5110 1090
+Wire Wire Line
+	4750 1090 4750 1150
+Wire Wire Line
+	4490 1240 4490 1090
+Connection ~ 4750 1090
+Connection ~ 4990 1090
+Wire Wire Line
+	4750 1350 4750 1400
+Wire Wire Line
+	4750 1400 4990 1400
+Wire Wire Line
+	4990 1400 4990 1350
+$Comp
+L GND #PWR?
+U 1 1 59DCA58C
+P 4860 1430
+F 0 "#PWR?" H 4730 1470 50  0001 L CNN
+F 1 "GND" H 4980 1400 50  0000 C CNN
+F 2 "" H 4860 1430 50  0001 C CNN
+F 3 "" H 4860 1430 50  0001 C CNN
+	1    4860 1430
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4860 1430 4860 1400
+Connection ~ 4860 1400
 $EndSCHEMATC

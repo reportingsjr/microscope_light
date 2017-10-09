@@ -429,7 +429,7 @@ F 4 "NR8040T100M" V 3010 4900 60  0001 C CNN "part number"
 	1    3010 4900
 	0    -1   -1   0   
 $EndComp
-Text Label 6480 1860 0    30   ~ 0
+Text Label 6510 1860 0    30   ~ 0
 Vbat
 Text Label 3160 5600 2    40   ~ 0
 Vout
@@ -470,7 +470,7 @@ F 3 "" H 2840 5170 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2750 5300 2    30   ~ 0
-Enable
+enable
 $Comp
 L GND #PWR?
 U 1 1 59EF0E02
@@ -482,7 +482,7 @@ F 3 "" H 2330 5720 50  0001 C CNN
 	1    2330 5720
 	1    0    0    -1  
 $EndComp
-Text Label 4230 5400 0    30   ~ 0
+Text Label 4130 5400 0    30   ~ 0
 low_battery
 $Comp
 L R_Small R?
@@ -587,7 +587,7 @@ F 3 "" H 3130 6430 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1630 1410 2000 1410
+	1630 1410 2220 1410
 Wire Wire Line
 	2000 1410 2000 1440
 Wire Wire Line
@@ -611,7 +611,7 @@ Wire Wire Line
 Wire Wire Line
 	4260 1760 4180 1760
 Wire Wire Line
-	5660 1860 6480 1860
+	5660 1860 6640 1860
 Wire Wire Line
 	6480 1860 6480 1920
 Wire Wire Line
@@ -689,7 +689,7 @@ Wire Wire Line
 Wire Wire Line
 	6390 1410 6390 1470
 Wire Wire Line
-	5890 1410 6510 1410
+	5890 1410 6740 1410
 Wire Wire Line
 	6150 1410 6150 1470
 Wire Wire Line
@@ -742,9 +742,9 @@ Connection ~ 2330 5400
 Wire Wire Line
 	2330 5670 2330 5720
 Wire Wire Line
-	4100 5400 4230 5400
+	4100 5400 4400 5400
 Wire Wire Line
-	4100 4900 5740 4900
+	4100 4900 6270 4900
 Wire Wire Line
 	4100 5000 4260 5000
 Wire Wire Line
@@ -843,4 +843,106 @@ F 3 "" H 9110 1470 50  0001 C CNN
 	1    9110 1470
 	0    1    1    0   
 $EndComp
+$Comp
+L CONN_01x02 J?
+U 1 1 59FBD39A
+P 6370 5580
+F 0 "J?" H 6292 5479 50  0000 R CNN
+F 1 "enable_switch" H 6292 5570 50  0000 R CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 6370 5580 50  0001 C CNN
+F 3 "" H 6370 5580 50  0001 C CNN
+	1    6370 5580
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01x02 J?
+U 1 1 59FBD6E0
+P 6370 4900
+F 0 "J?" H 6402 5115 50  0000 C CNN
+F 1 "5V175_out" H 6402 5024 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 6370 4900 50  0001 C CNN
+F 3 "" H 6370 4900 50  0001 C CNN
+	1    6370 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59FC5FD9
+P 6200 5080
+F 0 "#PWR?" H 6070 5120 50  0001 L CNN
+F 1 "GND" H 6200 4947 50  0000 C CNN
+F 2 "" H 6200 5080 50  0001 C CNN
+F 3 "" H 6200 5080 50  0001 C CNN
+	1    6200 5080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6270 5000 6200 5000
+Wire Wire Line
+	6200 5000 6200 5080
+Text Label 6120 5480 2    30   ~ 0
+enable
+$Comp
+L GND #PWR?
+U 1 1 59FCBF9F
+P 6190 5670
+F 0 "#PWR?" H 6060 5710 50  0001 L CNN
+F 1 "GND" H 6190 5537 50  0000 C CNN
+F 2 "" H 6190 5670 50  0001 C CNN
+F 3 "" H 6190 5670 50  0001 C CNN
+	1    6190 5670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6190 5670 6190 5580
+Wire Wire Line
+	6190 5580 6270 5580
+Wire Wire Line
+	6270 5480 6120 5480
+$Comp
+L TESTPAD TP?
+U 1 1 59FD2D5E
+P 4400 5400
+F 0 "TP?" H 4380 5330 50  0000 L CNN
+F 1 "TESTPAD" H 4400 5325 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4400 5250 50  0001 L CNN
+F 3 "" H 4400 5400 50  0001 C CNN
+	1    4400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TESTPAD TP?
+U 1 1 59FD7F8A
+P 6740 1410
+F 0 "TP?" H 6838 1410 50  0000 L CNN
+F 1 "TESTPAD" H 6740 1335 50  0001 L CNN
+F 2 "agg:TESTPAD" H 6740 1260 50  0001 L CNN
+F 3 "" H 6740 1410 50  0001 C CNN
+	1    6740 1410
+	1    0    0    -1  
+$EndComp
+$Comp
+L TESTPAD TP?
+U 1 1 59FD88E1
+P 2220 1410
+F 0 "TP?" H 2318 1410 50  0000 L CNN
+F 1 "TESTPAD" H 2220 1335 50  0001 L CNN
+F 2 "agg:TESTPAD" H 2220 1260 50  0001 L CNN
+F 3 "" H 2220 1410 50  0001 C CNN
+	1    2220 1410
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 1410
+$Comp
+L TESTPAD TP?
+U 1 1 59FDA6BA
+P 6640 1860
+F 0 "TP?" H 6738 1860 50  0000 L CNN
+F 1 "TESTPAD" H 6640 1785 50  0001 L CNN
+F 2 "agg:TESTPAD" H 6640 1710 50  0001 L CNN
+F 3 "" H 6640 1860 50  0001 C CNN
+	1    6640 1860
+	1    0    0    -1  
+$EndComp
+Connection ~ 6480 1860
 $EndSCHEMATC

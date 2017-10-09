@@ -470,7 +470,7 @@ F 3 "" H 2840 5170 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2750 5300 2    30   ~ 0
-Enable
+enable
 $Comp
 L GND #PWR?
 U 1 1 59EF0E02
@@ -482,7 +482,7 @@ F 3 "" H 2330 5720 50  0001 C CNN
 	1    2330 5720
 	1    0    0    -1  
 $EndComp
-Text Label 4230 5400 0    30   ~ 0
+Text Label 4130 5400 0    30   ~ 0
 low_battery
 $Comp
 L R_Small R?
@@ -742,9 +742,9 @@ Connection ~ 2330 5400
 Wire Wire Line
 	2330 5670 2330 5720
 Wire Wire Line
-	4100 5400 4230 5400
+	4100 5400 4400 5400
 Wire Wire Line
-	4100 4900 5740 4900
+	4100 4900 6270 4900
 Wire Wire Line
 	4100 5000 4260 5000
 Wire Wire Line
@@ -802,45 +802,112 @@ Connection ~ 3130 6200
 $Comp
 L Mounting_Hole MK?
 U 1 1 59FAECB9
-P 9390 2820
-F 0 "MK?" H 9490 2866 50  0000 L CNN
-F 1 "Mounting_Hole" H 9490 2775 50  0000 L CNN
-F 2 "" H 9390 2820 50  0001 C CNN
-F 3 "" H 9390 2820 50  0001 C CNN
-	1    9390 2820
+P 9290 1470
+F 0 "MK?" H 9390 1516 50  0000 L CNN
+F 1 "Mounting_Hole" H 9390 1425 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9290 1470 50  0001 C CNN
+F 3 "" H 9290 1470 50  0001 C CNN
+	1    9290 1470
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mounting_Hole MK?
 U 1 1 59FAF2DD
-P 9390 3020
-F 0 "MK?" H 9490 3066 50  0000 L CNN
-F 1 "Mounting_Hole" H 9490 2975 50  0000 L CNN
-F 2 "" H 9390 3020 50  0001 C CNN
-F 3 "" H 9390 3020 50  0001 C CNN
-	1    9390 3020
+P 9290 1670
+F 0 "MK?" H 9390 1716 50  0000 L CNN
+F 1 "Mounting_Hole" H 9390 1625 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9290 1670 50  0001 C CNN
+F 3 "" H 9290 1670 50  0001 C CNN
+	1    9290 1670
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mounting_Hole MK?
 U 1 1 59FAF43B
-P 9210 3020
-F 0 "MK?" H 9110 3066 50  0000 R CNN
-F 1 "Mounting_Hole" H 9110 2975 50  0000 R CNN
-F 2 "" H 9210 3020 50  0001 C CNN
-F 3 "" H 9210 3020 50  0001 C CNN
-	1    9210 3020
+P 9110 1670
+F 0 "MK?" H 9010 1716 50  0000 R CNN
+F 1 "Mounting_Hole" H 9010 1625 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9110 1670 50  0001 C CNN
+F 3 "" H 9110 1670 50  0001 C CNN
+	1    9110 1670
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mounting_Hole MK?
 U 1 1 59FAF70C
-P 9210 2820
-F 0 "MK?" V 9150 2650 50  0000 C CNN
-F 1 "Mounting_Hole" V 9250 2450 50  0000 C CNN
-F 2 "" H 9210 2820 50  0001 C CNN
-F 3 "" H 9210 2820 50  0001 C CNN
-	1    9210 2820
+P 9110 1470
+F 0 "MK?" V 9050 1300 50  0000 C CNN
+F 1 "Mounting_Hole" V 9150 1100 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9110 1470 50  0001 C CNN
+F 3 "" H 9110 1470 50  0001 C CNN
+	1    9110 1470
 	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01x02 J?
+U 1 1 59FBD39A
+P 6370 5580
+F 0 "J?" H 6292 5479 50  0000 R CNN
+F 1 "enable_switch" H 6292 5570 50  0000 R CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 6370 5580 50  0001 C CNN
+F 3 "" H 6370 5580 50  0001 C CNN
+	1    6370 5580
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01x02 J?
+U 1 1 59FBD6E0
+P 6370 4900
+F 0 "J?" H 6402 5115 50  0000 C CNN
+F 1 "5V175_out" H 6402 5024 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 6370 4900 50  0001 C CNN
+F 3 "" H 6370 4900 50  0001 C CNN
+	1    6370 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59FC5FD9
+P 6200 5080
+F 0 "#PWR?" H 6070 5120 50  0001 L CNN
+F 1 "GND" H 6200 4947 50  0000 C CNN
+F 2 "" H 6200 5080 50  0001 C CNN
+F 3 "" H 6200 5080 50  0001 C CNN
+	1    6200 5080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6270 5000 6200 5000
+Wire Wire Line
+	6200 5000 6200 5080
+Text Label 6120 5480 2    30   ~ 0
+enable
+$Comp
+L GND #PWR?
+U 1 1 59FCBF9F
+P 6190 5670
+F 0 "#PWR?" H 6060 5710 50  0001 L CNN
+F 1 "GND" H 6190 5537 50  0000 C CNN
+F 2 "" H 6190 5670 50  0001 C CNN
+F 3 "" H 6190 5670 50  0001 C CNN
+	1    6190 5670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6190 5670 6190 5580
+Wire Wire Line
+	6190 5580 6270 5580
+Wire Wire Line
+	6270 5480 6120 5480
+$Comp
+L TESTPAD TP?
+U 1 1 59FD2D5E
+P 4400 5400
+F 0 "TP?" H 4380 5330 50  0000 L CNN
+F 1 "TESTPAD" H 4400 5325 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4400 5250 50  0001 L CNN
+F 3 "" H 4400 5400 50  0001 C CNN
+	1    4400 5400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

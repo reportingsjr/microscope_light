@@ -799,4 +799,48 @@ Connection ~ 3130 6100
 Wire Wire Line
 	3300 6200 3130 6200
 Connection ~ 3130 6200
+$Comp
+L Mounting_Hole MK?
+U 1 1 59FAECB9
+P 9290 1470
+F 0 "MK?" H 9390 1516 50  0000 L CNN
+F 1 "Mounting_Hole" H 9390 1425 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9290 1470 50  0001 C CNN
+F 3 "" H 9290 1470 50  0001 C CNN
+	1    9290 1470
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK?
+U 1 1 59FAF2DD
+P 9290 1670
+F 0 "MK?" H 9390 1716 50  0000 L CNN
+F 1 "Mounting_Hole" H 9390 1625 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9290 1670 50  0001 C CNN
+F 3 "" H 9290 1670 50  0001 C CNN
+	1    9290 1670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK?
+U 1 1 59FAF43B
+P 9110 1670
+F 0 "MK?" H 9010 1716 50  0000 R CNN
+F 1 "Mounting_Hole" H 9010 1625 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9110 1670 50  0001 C CNN
+F 3 "" H 9110 1670 50  0001 C CNN
+	1    9110 1670
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK?
+U 1 1 59FAF70C
+P 9110 1470
+F 0 "MK?" V 9050 1300 50  0000 C CNN
+F 1 "Mounting_Hole" V 9150 1100 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO14580" H 9110 1470 50  0001 C CNN
+F 3 "" H 9110 1470 50  0001 C CNN
+	1    9110 1470
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

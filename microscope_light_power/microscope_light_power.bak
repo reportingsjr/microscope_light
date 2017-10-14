@@ -306,10 +306,10 @@ $EndComp
 Text Label 4170 2060 2    40   ~ 0
 Vusb
 $Comp
-L LED yellow1
+L LED yellow
 U 1 1 59DA5C71
 P 6050 2560
-F 0 "yellow1" H 6100 2750 50  0000 C CNN
+F 0 "yellow" H 6100 2750 50  0000 C CNN
 F 1 "charging" H 6100 2670 50  0000 C CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 6050 2560 50  0001 C CNN
 F 3 "" H 6050 2560 50  0001 C CNN
@@ -339,10 +339,10 @@ F 3 "" H 5860 2660 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED green1
+L LED green
 U 1 1 59DA7F2A
 P 6050 2660
-F 0 "green1" H 6110 2600 50  0000 C CNN
+F 0 "green" H 6110 2600 50  0000 C CNN
 F 1 "done" H 6100 2530 50  0000 C CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 6050 2660 50  0001 C CNN
 F 3 "" H 6050 2660 50  0001 C CNN

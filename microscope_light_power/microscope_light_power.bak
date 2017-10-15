@@ -966,4 +966,6 @@ Wire Wire Line
 	2390 1750 2390 1720
 Text Label 3250 4900 0    30   ~ 0
 SW
+Text Notes 2430 2750 0    30   ~ 0
+The thermistor has a bizarre PCB trace because \nI didn't want to break up the ground plane. By the \ntime I realized this a good chunk of the board was already laid out.
 $EndSCHEMATC

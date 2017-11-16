@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCP73871-2AA U1
+L Battery_Management:MCP73871-2AA U1
 U 1 1 59D910F2
 P 4960 2160
 F 0 "U1" H 5270 3140 50  0000 C CNN
@@ -38,7 +38,7 @@ F 4 "1568023" H 1180 1010 50  0001 L CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L device:C_Small C1
 U 1 1 59D98E5C
 P 2000 1540
 F 0 "C1" H 2092 1586 50  0000 L CNN
@@ -64,7 +64,7 @@ Vusb
 Text Label 4960 1130 0    50   ~ 0
 Vusb
 $Comp
-L R_Small R4
+L device:R_Small R4
 U 1 1 59D9A07F
 P 3710 1120
 F 0 "R4" H 3860 1080 50  0000 R CNN
@@ -75,7 +75,7 @@ F 3 "" H 3710 1120 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R_Small R5
+L device:R_Small R5
 U 1 1 59D9A22F
 P 3710 1480
 F 0 "R5" H 3652 1526 50  0000 R CNN
@@ -101,7 +101,7 @@ $EndComp
 Text Label 4180 1760 2    40   ~ 0
 Vusb
 $Comp
-L Battery_Cell BT1
+L device:Battery_Cell BT1
 U 1 1 59D9D37D
 P 6480 2120
 F 0 "BT1" H 6598 2216 50  0000 L CNN
@@ -112,7 +112,7 @@ F 3 "" V 6480 2180 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C6
+L device:C_Small C6
 U 1 1 59D9EDD9
 P 6160 2080
 F 0 "C6" H 6020 2160 50  0000 L CNN
@@ -145,7 +145,7 @@ F 3 "" H 6480 2310 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R6
+L device:R_Small R6
 U 1 1 59DA1BCD
 P 3960 1940
 F 0 "R6" V 3900 1810 50  0000 C CNN
@@ -180,7 +180,7 @@ F 3 "" H 6050 2560 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R10
+L device:R_Small R10
 U 1 1 59DA6091
 P 5860 2560
 F 0 "R10" V 5800 2440 50  0000 C CNN
@@ -191,7 +191,7 @@ F 3 "" H 5860 2560 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Small R11
+L device:R_Small R11
 U 1 1 59DA68A2
 P 5860 2660
 F 0 "R11" V 5930 2540 50  0000 C CNN
@@ -218,7 +218,7 @@ NoConn ~ 5660 2360
 Text Label 4050 2560 2    50   ~ 0
 Vusb
 $Comp
-L R_Small R7
+L device:R_Small R7
 U 1 1 59DADA49
 P 3960 2160
 F 0 "R7" V 3900 2030 50  0000 C CNN
@@ -229,7 +229,7 @@ F 3 "" H 3960 2160 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Thermistor_NTC TH1
+L device:Thermistor_NTC TH1
 U 1 1 59DBA795
 P 4000 2360
 F 0 "TH1" V 4060 2550 50  0000 C CNN
@@ -242,7 +242,7 @@ $EndComp
 Text Label 6510 1410 0    50   ~ 0
 Vout
 $Comp
-L C_Small C5
+L device:C_Small C5
 U 1 1 59DC8009
 P 6150 1570
 F 0 "C5" H 6010 1650 50  0000 L CNN
@@ -253,7 +253,7 @@ F 3 "" H 6150 1570 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C7
+L device:C_Small C7
 U 1 1 59DC8053
 P 6390 1570
 F 0 "C7" H 6250 1650 50  0000 L CNN
@@ -281,7 +281,7 @@ Charge current is 1A set by PROG1.
 Text Notes 2780 2210 0    30   ~ 0
 Charge termination current is 50mA \nas set by PROG3.
 $Comp
-L L_Small L1
+L device:L_Small L1
 U 1 1 59E33161
 P 3010 4900
 F 0 "L1" V 3195 4900 50  0000 C CNN
@@ -406,7 +406,7 @@ F 3 "" H 2080 5260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1_Small C3
+L device:CP1_Small C3
 U 1 1 59F2FA52
 P 5020 5100
 F 0 "C3" H 5111 5146 50  0000 L CNN
@@ -647,7 +647,7 @@ Wire Wire Line
 	5200 5330 5200 5270
 Connection ~ 5200 5270
 $Comp
-L Mounting_Hole MK3
+L Mechanical:Mounting_Hole MK3
 U 1 1 59FAECB9
 P 9290 1470
 F 0 "MK3" H 9390 1516 50  0000 L CNN
@@ -658,7 +658,7 @@ F 3 "" H 9290 1470 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK4
+L Mechanical:Mounting_Hole MK4
 U 1 1 59FAF2DD
 P 9290 1670
 F 0 "MK4" H 9390 1716 50  0000 L CNN
@@ -669,7 +669,7 @@ F 3 "" H 9290 1670 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK2
+L Mechanical:Mounting_Hole MK2
 U 1 1 59FAF43B
 P 9110 1670
 F 0 "MK2" H 9010 1716 50  0000 R CNN
@@ -680,7 +680,7 @@ F 3 "" H 9110 1670 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK1
+L Mechanical:Mounting_Hole MK1
 U 1 1 59FAF70C
 P 9110 1470
 F 0 "MK1" V 9050 1300 50  0000 C CNN
@@ -796,7 +796,7 @@ NoConn ~ 1630 1510
 NoConn ~ 1630 1610
 NoConn ~ 1630 1710
 $Comp
-L PWR_FLAG #FLG01
+L power:PWR_FLAG #FLG01
 U 1 1 59DCBD88
 P 2390 1720
 F 0 "#FLG01" H 2390 1795 50  0001 C CNN

@@ -1,130 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:agg-kicad
-LIBS:zetex
-LIBS:wiznet
-LIBS:triac_thyristor
-LIBS:nxp
-LIBS:modules
-LIBS:logic_programmable
-LIBS:intersil
-LIBS:infineon
-LIBS:driver_gate
-LIBS:bosch
-LIBS:bbd
-LIBS:Worldsemi
-LIBS:Valve
-LIBS:Transistor
-LIBS:Transformer
-LIBS:Switch
-LIBS:Sensor_Current
-LIBS:Relay
-LIBS:RFSolutions
-LIBS:Motor
-LIBS:Mechanical
-LIBS:MCU_Texas_MSP430
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_NXP_S08
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC10
-LIBS:Logic_TTL_IEEE
-LIBS:Logic_CMOS_IEEE
-LIBS:Logic_CMOS_4000
-LIBS:Logic_74xx
-LIBS:Logic_74xgxx
-LIBS:LEM
-LIBS:LED
-LIBS:Graphic
-LIBS:FPGA_Actel
-LIBS:Espressif
-LIBS:Display
-LIBS:Diode
-LIBS:DSP_Microchip_DSPIC33
-LIBS:Connector
-LIBS:Battery_Management
-LIBS:ftdi
-LIBS:intel
-LIBS:motor_drivers
-LIBS:references
-LIBS:maxim
-LIBS:opto
-LIBS:philips
-LIBS:pspice
-LIBS:xilinx
-LIBS:onsemi
-LIBS:digital-audio
-LIBS:interface
-LIBS:Oscillators
-LIBS:nordicsemi
-LIBS:sensors
-LIBS:contrib
-LIBS:video
-LIBS:ir
-LIBS:analog_switches
-LIBS:device
-LIBS:ESD_Protection
-LIBS:Altera
-LIBS:linear
-LIBS:atmel
-LIBS:supertex
-LIBS:siliconi
-LIBS:silabs
-LIBS:regul
-LIBS:memory
-LIBS:dsp
-LIBS:power
-LIBS:microchip
-LIBS:rfcom
-LIBS:ac-dc
-LIBS:Xicor
-LIBS:texas
-LIBS:Power_Management
-LIBS:hc11
-LIBS:analog_devices
-LIBS:dc-dc
-LIBS:powerint
-LIBS:elec-unifil
-LIBS:Zilog
-LIBS:adc-dac
-LIBS:motorola
-LIBS:Lattice
-LIBS:cypress
-LIBS:audio
-LIBS:microcontrollers
-LIBS:transistors
-LIBS:display
-LIBS:microchip_pic32mcu
-LIBS:microchip_dspic33dsc
-LIBS:conn
-LIBS:switches
-LIBS:graphic
-LIBS:nxp_armmcu
-LIBS:microchip_pic18mcu
-LIBS:74xgxx
-LIBS:cmos_ieee
-LIBS:diode
-LIBS:ttl_ieee
-LIBS:msp430
-LIBS:brooktre
-LIBS:microchip_pic10mcu
-LIBS:relays
-LIBS:stm8
-LIBS:valves
-LIBS:cmos4000
-LIBS:actel
-LIBS:stm32
-LIBS:logo
-LIBS:gennum
-LIBS:microchip_pic12mcu
-LIBS:74xx
-LIBS:transf
-LIBS:microchip_pic16mcu
+EESchema Schematic File Version 4
 LIBS:microscope_light_power-cache
 EELAYER 26 0
 EELAYER END
@@ -141,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TPS61090 U2
-U 1 1 59D90497
-P 3700 5600
-F 0 "U2" H 3700 6525 50  0000 C CNN
-F 1 "TPS61090" H 3700 6434 50  0000 C CNN
-F 2 "agg:QFN-16-EP-TI" H 3400 4700 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps61090.pdf" H 3400 4600 50  0001 L CNN
-	1    3700 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCP73871-2AA U1
 U 1 1 59D910F2
 P 4960 2160
@@ -163,7 +26,7 @@ F 3 "" H 4810 2710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MICROUSB J1
+L agg-kicad:MICROUSB J1
 U 1 1 59D91D50
 P 1330 1610
 F 0 "J1" H 1411 2035 50  0000 C CNN
@@ -186,7 +49,7 @@ F 3 "" H 2000 1540 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L agg-kicad:GND #PWR01
 U 1 1 59D99426
 P 2000 1870
 F 0 "#PWR01" H 1870 1910 50  0001 L CNN
@@ -225,7 +88,7 @@ $EndComp
 Text Label 3710 920  0    50   ~ 0
 Vusb
 $Comp
-L GND #PWR02
+L agg-kicad:GND #PWR02
 U 1 1 59D9AC2B
 P 3710 1660
 F 0 "#PWR02" H 3580 1700 50  0001 L CNN
@@ -260,7 +123,7 @@ F 3 "" H 6160 2080 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L agg-kicad:GND #PWR03
 U 1 1 59D9FB5D
 P 4960 3130
 F 0 "#PWR03" H 4830 3170 50  0001 L CNN
@@ -271,7 +134,7 @@ F 3 "" H 4960 3130 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L agg-kicad:GND #PWR04
 U 1 1 59DA04A7
 P 6480 2310
 F 0 "#PWR04" H 6350 2350 50  0001 L CNN
@@ -293,7 +156,7 @@ F 3 "" H 3960 1940 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR05
+L agg-kicad:GND #PWR05
 U 1 1 59DA245E
 P 3710 2440
 F 0 "#PWR05" H 3580 2480 50  0001 L CNN
@@ -306,7 +169,7 @@ $EndComp
 Text Label 4170 2060 2    40   ~ 0
 Vusb
 $Comp
-L LED yellow1
+L agg-kicad:LED yellow1
 U 1 1 59DA5C71
 P 6050 2560
 F 0 "yellow1" H 6100 2750 50  0000 C CNN
@@ -339,7 +202,7 @@ F 3 "" H 5860 2660 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED green1
+L agg-kicad:LED green1
 U 1 1 59DA7F2A
 P 6050 2660
 F 0 "green1" H 6110 2600 50  0000 C CNN
@@ -401,7 +264,7 @@ F 3 "" H 6390 1570 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L agg-kicad:GND #PWR06
 U 1 1 59DCA58C
 P 6260 1750
 F 0 "#PWR06" H 6130 1790 50  0001 L CNN
@@ -472,7 +335,7 @@ $EndComp
 Text Label 2750 5300 2    30   ~ 0
 enable
 $Comp
-L GND #PWR07
+L agg-kicad:GND #PWR07
 U 1 1 59EF0E02
 P 2330 5720
 F 0 "#PWR07" H 2200 5760 50  0001 L CNN
@@ -510,7 +373,7 @@ $EndComp
 Text Label 5740 4900 0    50   ~ 0
 5V175
 $Comp
-L GND #PWR08
+L agg-kicad:GND #PWR08
 U 1 1 59F01C50
 P 4640 5610
 F 0 "#PWR08" H 4510 5650 50  0001 L CNN
@@ -532,7 +395,7 @@ F 3 "" H 2080 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L agg-kicad:GND #PWR09
 U 1 1 59F0FE60
 P 2080 5260
 F 0 "#PWR09" H 1950 5300 50  0001 L CNN
@@ -565,7 +428,7 @@ F 3 "" H 5430 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L agg-kicad:GND #PWR010
 U 1 1 59F358E1
 P 5200 5330
 F 0 "#PWR010" H 5070 5370 50  0001 L CNN
@@ -576,14 +439,14 @@ F 3 "" H 5200 5330 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L agg-kicad:GND #PWR011
 U 1 1 59F37EA3
-P 3130 6430
-F 0 "#PWR011" H 3000 6470 50  0001 L CNN
-F 1 "GND" H 3130 6297 50  0000 C CNN
-F 2 "" H 3130 6430 50  0001 C CNN
-F 3 "" H 3130 6430 50  0001 C CNN
-	1    3130 6430
+P 3750 6130
+F 0 "#PWR011" H 3620 6170 50  0001 L CNN
+F 1 "GND" H 3750 5997 50  0000 C CNN
+F 2 "" H 3750 6130 50  0001 C CNN
+F 3 "" H 3750 6130 50  0001 C CNN
+	1    3750 6130
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -783,22 +646,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 5330 5200 5270
 Connection ~ 5200 5270
-Wire Wire Line
-	3300 5800 3130 5800
-Wire Wire Line
-	3130 5800 3130 6430
-Wire Wire Line
-	3300 5900 3130 5900
-Connection ~ 3130 5900
-Wire Wire Line
-	3300 6000 3130 6000
-Connection ~ 3130 6000
-Wire Wire Line
-	3300 6100 3130 6100
-Connection ~ 3130 6100
-Wire Wire Line
-	3300 6200 3130 6200
-Connection ~ 3130 6200
 $Comp
 L Mounting_Hole MK3
 U 1 1 59FAECB9
@@ -844,7 +691,7 @@ F 3 "" H 9110 1470 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01x02 J3
+L agg-kicad:CONN_01x02 J3
 U 1 1 59FBD39A
 P 6370 5580
 F 0 "J3" H 6292 5479 50  0000 R CNN
@@ -855,7 +702,7 @@ F 3 "" H 6370 5580 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L CONN_01x02 J2
+L agg-kicad:CONN_01x02 J2
 U 1 1 59FBD6E0
 P 6370 4900
 F 0 "J2" H 6402 5115 50  0000 C CNN
@@ -866,7 +713,7 @@ F 3 "" H 6370 4900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L agg-kicad:GND #PWR012
 U 1 1 59FC5FD9
 P 6200 5080
 F 0 "#PWR012" H 6070 5120 50  0001 L CNN
@@ -883,7 +730,7 @@ Wire Wire Line
 Text Label 6120 5480 2    30   ~ 0
 enable
 $Comp
-L GND #PWR013
+L agg-kicad:GND #PWR013
 U 1 1 59FCBF9F
 P 6190 5670
 F 0 "#PWR013" H 6060 5710 50  0001 L CNN
@@ -900,7 +747,7 @@ Wire Wire Line
 Wire Wire Line
 	6270 5480 6120 5480
 $Comp
-L TESTPAD TP2
+L agg-kicad:TESTPAD TP2
 U 1 1 59FD2D5E
 P 4400 5400
 F 0 "TP2" H 4380 5330 50  0000 L CNN
@@ -911,7 +758,7 @@ F 3 "" H 4400 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TESTPAD TP4
+L agg-kicad:TESTPAD TP4
 U 1 1 59FD7F8A
 P 6740 1410
 F 0 "TP4" H 6838 1410 50  0000 L CNN
@@ -922,7 +769,7 @@ F 3 "" H 6740 1410 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TESTPAD TP1
+L agg-kicad:TESTPAD TP1
 U 1 1 59FD88E1
 P 2220 1410
 F 0 "TP1" H 2318 1410 50  0000 L CNN
@@ -934,7 +781,7 @@ F 3 "" H 2220 1410 50  0001 C CNN
 $EndComp
 Connection ~ 2000 1410
 $Comp
-L TESTPAD TP3
+L agg-kicad:TESTPAD TP3
 U 1 1 59FDA6BA
 P 6640 1860
 F 0 "TP3" H 6738 1860 50  0000 L CNN
@@ -968,4 +815,33 @@ Text Label 3250 4900 0    30   ~ 0
 SW
 Text Notes 2430 2750 0    30   ~ 0
 The thermistor has a bizarre PCB trace because \nI didn't want to break up the ground plane. By the \ntime I realized this a good chunk of the board was already laid out.
+Wire Wire Line
+	3500 6000 3500 6070
+Wire Wire Line
+	3500 6070 3900 6070
+Wire Wire Line
+	3900 6070 3900 6000
+Wire Wire Line
+	3600 6000 3600 6070
+Connection ~ 3600 6070
+Wire Wire Line
+	3700 6000 3700 6070
+Connection ~ 3700 6070
+Wire Wire Line
+	3800 6000 3800 6070
+Connection ~ 3800 6070
+Wire Wire Line
+	3750 6130 3750 6070
+Connection ~ 3750 6070
+$Comp
+L dc-dc:TPS61090 U2
+U 1 1 5A0D83DB
+P 3700 5400
+F 0 "U2" H 3700 6125 50  0000 C CNN
+F 1 "TPS61090" H 3700 6034 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm" H 2750 4350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps61090.pdf" H 3850 4250 50  0001 L CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

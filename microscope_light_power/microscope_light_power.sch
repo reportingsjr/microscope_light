@@ -297,7 +297,7 @@ Vbat
 Text Label 3160 5600 2    40   ~ 0
 Vout
 $Comp
-L R_Small R2
+L device:R_Small R2
 U 1 1 59EDD7A4
 P 2330 5570
 F 0 "R2" H 2389 5616 50  0000 L CNN
@@ -308,7 +308,7 @@ F 3 "" H 2330 5570 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R1
+L device:R_Small R1
 U 1 1 59EDDA47
 P 2330 5270
 F 0 "R1" H 2390 5270 50  0000 L CNN
@@ -322,7 +322,7 @@ $EndComp
 Text Label 1860 4900 2    30   ~ 0
 Vout
 $Comp
-L R_Small R3
+L device:R_Small R3
 U 1 1 59EE2E52
 P 2840 5170
 F 0 "R3" H 2899 5216 50  0000 L CNN
@@ -348,7 +348,7 @@ $EndComp
 Text Label 4130 5400 0    30   ~ 0
 low_battery
 $Comp
-L R_Small R8
+L device:R_Small R8
 U 1 1 59EF7277
 P 4640 5120
 F 0 "R8" H 4510 5150 50  0000 L CNN
@@ -360,7 +360,7 @@ F 4 "RC0603FR-071M87L" H 4640 5120 60  0001 C CNN "part number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R9
+L device:R_Small R9
 U 1 1 59EF7422
 P 4640 5450
 F 0 "R9" H 4699 5496 50  0000 L CNN
@@ -384,7 +384,7 @@ F 3 "" H 4640 5610 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L device:C_Small C2
 U 1 1 59F0D2BD
 P 2080 5100
 F 0 "C2" H 1989 5146 50  0000 R CNN
@@ -417,7 +417,7 @@ F 3 "" H 5020 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C4
+L device:C_Small C4
 U 1 1 59F32F78
 P 5430 5100
 F 0 "C4" H 5522 5146 50  0000 L CNN

@@ -1,0 +1,377 @@
+EESchema Schematic File Version 4
+LIBS:microscope_light_leds-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Worldsemi:WS2812B LED1
+U 1 1 59F4FBE8
+P 3680 3020
+F 0 "LED1" H 3680 3245 50  0000 C CNN
+F 1 "WS2812B" H 3680 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 3680 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 3680 2970 50  0001 C CNN
+	1    3680 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:CONN_01x04 J1
+U 1 1 59FAE20F
+P 2120 2960
+F 0 "J1" H 2151 3175 50  0000 C CNN
+F 1 "CONN_01x04" H 2151 3084 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B4B-PH-K_04x2.00mm_Straight" H 2120 2960 50  0001 C CNN
+F 3 "" H 2120 2960 50  0001 C CNN
+	1    2120 2960
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED2
+U 1 1 59FAE42B
+P 4840 3020
+F 0 "LED2" H 4840 3245 50  0000 C CNN
+F 1 "WS2812B" H 4840 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 4840 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 4840 2970 50  0001 C CNN
+	1    4840 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED3
+U 1 1 59FAE44F
+P 6050 3020
+F 0 "LED3" H 6050 3245 50  0000 C CNN
+F 1 "WS2812B" H 6050 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 6050 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 6050 2970 50  0001 C CNN
+	1    6050 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED4
+U 1 1 59FAE589
+P 7310 3020
+F 0 "LED4" H 7310 3245 50  0000 C CNN
+F 1 "WS2812B" H 7310 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 7310 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 7310 2970 50  0001 C CNN
+	1    7310 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:CONN_01x04 J2
+U 1 1 59FB177A
+P 10420 2920
+F 0 "J2" H 10452 3135 50  0000 C CNN
+F 1 "CONN_01x04" H 10452 3044 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B4B-PH-K_04x2.00mm_Straight" H 10420 2920 50  0001 C CNN
+F 3 "" H 10420 2920 50  0001 C CNN
+	1    10420 2920
+	-1   0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:GND #PWR01
+U 1 1 59FB42DC
+P 5620 3520
+F 0 "#PWR01" H 5620 3270 50  0001 C CNN
+F 1 "GND" H 5625 3347 50  0000 C CNN
+F 2 "" H 5620 3520 50  0001 C CNN
+F 3 "" H 5620 3520 50  0001 C CNN
+	1    5620 3520
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:5v #PWR02
+U 1 1 59FB5207
+P 5660 2550
+F 0 "#PWR02" H 5660 2660 50  0001 L CNN
+F 1 "5v" H 5660 2674 50  0000 C CNN
+F 2 "" H 5660 2550 60  0001 C CNN
+F 3 "" H 5660 2550 60  0001 C CNN
+	1    5660 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED?
+U 1 1 59FB62E1
+P 8540 3020
+F 0 "LED?" H 8540 3245 50  0000 C CNN
+F 1 "WS2812B" H 8540 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 8540 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 8540 2970 50  0001 C CNN
+	1    8540 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Worldsemi:WS2812B LED?
+U 1 1 59FB6CDB
+P 9590 3020
+F 0 "LED?" H 9590 3245 50  0000 C CNN
+F 1 "WS2812B" H 9590 3154 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 9590 2720 50  0001 C CNN
+F 3 "http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf" H 9590 2970 50  0001 C CNN
+	1    9590 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9470
+P 5380 4820
+F 0 "C?" H 5472 4866 50  0000 L CNN
+F 1 "0.1uF" H 5472 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5380 4820 50  0001 C CNN
+F 3 "" H 5380 4820 50  0001 C CNN
+	1    5380 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9BA5
+P 5810 4820
+F 0 "C?" H 5902 4866 50  0000 L CNN
+F 1 "0.1uF" H 5902 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5810 4820 50  0001 C CNN
+F 3 "" H 5810 4820 50  0001 C CNN
+	1    5810 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9CC3
+P 6240 4820
+F 0 "C?" H 6332 4866 50  0000 L CNN
+F 1 "0.1uF" H 6332 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6240 4820 50  0001 C CNN
+F 3 "" H 6240 4820 50  0001 C CNN
+	1    6240 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9EF6
+P 6660 4820
+F 0 "C?" H 6752 4866 50  0000 L CNN
+F 1 "0.1uF" H 6752 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6660 4820 50  0001 C CNN
+F 3 "" H 6660 4820 50  0001 C CNN
+	1    6660 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9F56
+P 7090 4820
+F 0 "C?" H 7182 4866 50  0000 L CNN
+F 1 "0.1uF" H 7182 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7090 4820 50  0001 C CNN
+F 3 "" H 7090 4820 50  0001 C CNN
+	1    7090 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A0F9F94
+P 7500 4820
+F 0 "C?" H 7592 4866 50  0000 L CNN
+F 1 "0.1uF" H 7592 4775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7500 4820 50  0001 C CNN
+F 3 "" H 7500 4820 50  0001 C CNN
+	1    7500 4820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4080 3020 4260 3020
+Wire Wire Line
+	4260 3020 4260 3120
+Wire Wire Line
+	4260 3120 4440 3120
+Wire Wire Line
+	5240 3020 5450 3020
+Wire Wire Line
+	5450 3020 5450 3120
+Wire Wire Line
+	5450 3120 5650 3120
+Wire Wire Line
+	6450 3020 6680 3020
+Wire Wire Line
+	6680 3020 6680 3120
+Wire Wire Line
+	6680 3120 6910 3120
+Wire Wire Line
+	2220 2960 2770 2960
+Wire Wire Line
+	2770 2960 2770 2670
+Wire Wire Line
+	2770 2670 10090 2670
+Wire Wire Line
+	6820 2670 6820 3020
+Wire Wire Line
+	6820 3020 6910 3020
+Wire Wire Line
+	5650 3020 5560 3020
+Wire Wire Line
+	5560 3020 5560 2670
+Connection ~ 5560 2670
+Wire Wire Line
+	4440 3020 4380 3020
+Wire Wire Line
+	4380 3020 4380 2670
+Connection ~ 4380 2670
+Wire Wire Line
+	3280 3020 3150 3020
+Wire Wire Line
+	3150 3020 3150 2670
+Connection ~ 3150 2670
+Wire Wire Line
+	2220 3060 2980 3060
+Wire Wire Line
+	2980 3060 2980 3120
+Wire Wire Line
+	2980 3120 3280 3120
+Wire Wire Line
+	2220 3160 2770 3160
+Wire Wire Line
+	2770 3160 2770 3390
+Wire Wire Line
+	4080 3120 4160 3120
+Wire Wire Line
+	4160 3120 4160 3390
+Connection ~ 4160 3390
+Wire Wire Line
+	5240 3120 5350 3120
+Wire Wire Line
+	5350 3120 5350 3390
+Connection ~ 5350 3390
+Wire Wire Line
+	6450 3120 6520 3120
+Wire Wire Line
+	6520 3120 6520 3390
+Connection ~ 6520 3390
+Wire Wire Line
+	7830 3390 7830 3120
+Wire Wire Line
+	7830 3120 7710 3120
+Connection ~ 6820 2670
+Connection ~ 7830 3390
+Wire Wire Line
+	5620 3520 5620 3390
+Connection ~ 5620 3390
+Wire Wire Line
+	5660 2550 5660 2670
+Connection ~ 5660 2670
+Wire Wire Line
+	2770 3390 10090 3390
+Wire Wire Line
+	10090 3390 10090 3120
+Wire Wire Line
+	9990 3120 10320 3120
+Wire Wire Line
+	9990 3020 10320 3020
+Wire Wire Line
+	10090 2670 10090 2920
+Wire Wire Line
+	10090 2920 10320 2920
+Connection ~ 10090 3120
+Wire Wire Line
+	7710 3020 7940 3020
+Wire Wire Line
+	7940 3020 7940 3120
+Wire Wire Line
+	7940 3120 8140 3120
+Wire Wire Line
+	8940 3020 9070 3020
+Wire Wire Line
+	9070 3020 9070 3120
+Wire Wire Line
+	9070 3120 9190 3120
+Wire Wire Line
+	9190 3020 9150 3020
+Wire Wire Line
+	9150 3020 9150 2670
+Connection ~ 9150 2670
+Wire Wire Line
+	8140 3020 8090 3020
+Wire Wire Line
+	8090 3020 8090 2670
+Connection ~ 8090 2670
+Wire Wire Line
+	8940 3120 8990 3120
+Wire Wire Line
+	8990 3120 8990 3390
+Connection ~ 8990 3390
+Wire Wire Line
+	5380 4720 5380 4600
+Wire Wire Line
+	5380 4600 7500 4600
+Wire Wire Line
+	7500 4600 7500 4720
+Wire Wire Line
+	5380 4920 5380 5040
+Wire Wire Line
+	5380 5040 7500 5040
+Wire Wire Line
+	7500 5040 7500 4920
+Wire Wire Line
+	5810 4920 5810 5040
+Connection ~ 5810 5040
+Wire Wire Line
+	5810 4720 5810 4600
+Connection ~ 5810 4600
+Wire Wire Line
+	6240 4720 6240 4600
+Connection ~ 6240 4600
+Wire Wire Line
+	6240 4920 6240 5040
+Connection ~ 6240 5040
+Wire Wire Line
+	6660 4720 6660 4600
+Connection ~ 6660 4600
+Wire Wire Line
+	6660 4920 6660 5040
+Connection ~ 6660 5040
+Wire Wire Line
+	7090 4920 7090 5040
+Connection ~ 7090 5040
+Wire Wire Line
+	7090 4600 7090 4720
+Connection ~ 7090 4600
+$Comp
+L agg-kicad:GND #PWR?
+U 1 1 5A100246
+P 6450 5140
+F 0 "#PWR?" H 6450 4890 50  0001 C CNN
+F 1 "GND" H 6455 4967 50  0000 C CNN
+F 2 "" H 6450 5140 50  0001 C CNN
+F 3 "" H 6450 5140 50  0001 C CNN
+	1    6450 5140
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:5v #PWR?
+U 1 1 5A100B03
+P 6450 4530
+F 0 "#PWR?" H 6450 4640 50  0001 L CNN
+F 1 "5v" H 6450 4654 50  0000 C CNN
+F 2 "" H 6450 4530 60  0001 C CNN
+F 3 "" H 6450 4530 60  0001 C CNN
+	1    6450 4530
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4530 6450 4600
+Connection ~ 6450 4600
+Wire Wire Line
+	6450 5140 6450 5040
+Connection ~ 6450 5040
+$EndSCHEMATC

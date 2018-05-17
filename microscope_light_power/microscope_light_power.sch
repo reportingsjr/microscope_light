@@ -834,7 +834,7 @@ Wire Wire Line
 	3750 6130 3750 6070
 Connection ~ 3750 6070
 $Comp
-L dc-dc:TPS61090 U2
+L microscope_light_power-rescue:TPS61090-RESCUE-microscope_light_power U2
 U 1 1 5A0D83DB
 P 3700 5400
 F 0 "U2" H 3700 6125 50  0000 C CNN

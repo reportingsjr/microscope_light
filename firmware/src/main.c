@@ -44,7 +44,7 @@ struct led_status {
 
 void clock_setup(void);
 void leds_init(void);
-void leds_run(void);
+void leds_run(uint8_t);
 void adc_setup(void);
 uint16_t read_adc_naiive(uint8_t);
 
@@ -55,67 +55,32 @@ void clock_setup(void)
 }
 
 void leds_init(void) {
-    int i;
-    int8_t color;
-    int led_increment = (255/LED_COUNT) * 2;
+  int i;
 
-    for(i=0; i < LED_COUNT; i++) {
-      led_status.leds[i].grbu = 0;
-    }
+  for(i = 0; i < LED_COUNT; i++) {
+    led_status.leds[i].grbu = 0;
+  }
 
-    for (i = 0; i < LED_COUNT; i++) {
-      // r is amber
-#if 0
-        color = -255 + (led_increment * i);
-        if (color < 0) color = color * -1;
-        led_status.leds[i].colors.r = color;
-        if ((i % 6) < 3) {
-            led_status.dir[i].r = 1;
-        } else {
-            led_status.dir[i].r = -1;
-        }
-#else
-        led_status.leds[i].colors.r = 255;
-        led_status.dir[i].r = 0;
-#endif
+  for (i = 0; i < LED_COUNT; i++) {
+    // r is amber
+    led_status.leds[i].colors.r = 255;
+    led_status.dir[i].r = 0;
 
-        // g is cool white
-#if 0
-        color = -255 + (led_increment * (LED_COUNT / 3) ) + (led_increment * i);
-        if (color < 0) color = color * -1;
-        led_status.leds[i].colors.g = color;
-        if ((i % 6) < 3) {
-            led_status.dir[i].g = -1;
-        } else {
-            led_status.dir[i].g = 1;
-        }
-#else
-        led_status.leds[i].colors.g = 255;
-        led_status.dir[i].g = 0;
-#endif
+    // g is cool white
+    led_status.leds[i].colors.g = 255;
+    led_status.dir[i].g = 0;
 
-        // b is warm white
-#if 0
-        color = -255 + (led_increment * (LED_COUNT / 3) * 2) + (led_increment * i);
-        if (color < 0) color = color * -1;
-        led_status.leds[i].colors.b = color;
-        if ((i % 6) < 3) {
-            led_status.dir[i].b = 1;
-        } else {
-            led_status.dir[i].b = -1;
-        }
-#else
-        led_status.leds[i].colors.b =255;
-        led_status.dir[i].b = 0;
-#endif
-    }
+    // b is warm white
+    led_status.leds[i].colors.b = 255;
+    led_status.dir[i].b = 0;
+  }
 
-    led_status.timer = 0;
+  led_status.timer = 0;
 
-    ws2812_send(led_status.leds, LED_COUNT);
+  ws2812_send(led_status.leds, LED_COUNT);
 }
 
-void leds_run(void) {
+void leds_run(uint8_t brightness) {
     int i;
 
     /* This time has to be at least 40us so that the led string is reset. */
@@ -125,24 +90,9 @@ void leds_run(void) {
 
     if(!ws2812_is_sending()) {
         for(i = 0; i < LED_COUNT; i++) {
-            /*led_status.leds[i].colors.r += led_status.dir[i].r;
-            if(led_status.dir[i].r != 0) {
-                if(led_status.leds[i].colors.r == 255) led_status.dir[i].r = -1;
-                if(led_status.leds[i].colors.r == 0) led_status.dir[i].r = 1;
-            }
-            led_status.leds[i].colors.g += led_status.dir[i].g;
-            if(led_status.dir[i].g != 0) {
-                if(led_status.leds[i].colors.g == 255) led_status.dir[i].g = -1;
-                if(led_status.leds[i].colors.g == 0) led_status.dir[i].g = 1;
-            }
-            led_status.leds[i].colors.b += led_status.dir[i].b;
-            if(led_status.dir[i].b != 0) {
-                if(led_status.leds[i].colors.b == 255) led_status.dir[i].b = -1;
-                if(led_status.leds[i].colors.b == 0) led_status.dir[i].b = 1;
-            }*/
-            led_status.leds[i].colors.r = 255;//brightness;
-            led_status.leds[i].colors.g = 255;//brightness;
-            led_status.leds[i].colors.b = 255;//brightness;
+            led_status.leds[i].colors.r = brightness;
+            led_status.leds[i].colors.g = brightness;
+            led_status.leds[i].colors.b = brightness;
         }
         ws2812_send(led_status.leds, LED_COUNT);
     }
@@ -184,14 +134,40 @@ int main(void)
   leds_init();
 
   static uint16_t ADC_moving_average_values[50] = {0};
+  // update this if the number of ADC array positions is increased
+  // keep in mind that there is an accumulated error due to truncation from integer math.
+  // The more averages done the higher this error will be
+  static uint8_t number_ADC_averages = 50;
   static uint8_t current_value = 0;
+  static uint8_t loops_since_beginning = 0;
+
+  static uint16_t moving_average;
 
   while (1) {
     ADC_moving_average_values[current_value] = read_adc_naiive(0);
     current_value++;
-    if(current_value >= 50)
-    uint16_t brightness = (255*input_adc0)/4096;
-    leds_run();
+
+    // wrap around to the beginning of the array after index 49
+    if(current_value >= number_ADC_averages)
+    {
+      current_value = 0;
+      // count the number of loops so we can ramp the LEDs' brightness when turned on
+      if(loops_since_beginning < 9)
+      {
+        loops_since_beginning++;
+      }
+    }
+
+    moving_average = 0;
+    for(uint8_t i = 0; i < number_ADC_averages; i++)
+    {
+      moving_average += ADC_moving_average_values[i]/number_ADC_averages;
+    }
+
+    // normalize the ADC average in to an 8 bit number range
+    uint8_t brightness = (uint8_t) (((255*moving_average)/4096) & 0xFF);
+
+    leds_run(brightness);
   }
 
   return 0;

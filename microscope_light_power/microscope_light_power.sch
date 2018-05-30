@@ -169,10 +169,10 @@ $EndComp
 Text Label 4170 2060 2    40   ~ 0
 Vusb
 $Comp
-L agg-kicad:LED yellow1
+L agg-kicad:LED D1
 U 1 1 59DA5C71
 P 6050 2560
-F 0 "yellow1" H 6100 2750 50  0000 C CNN
+F 0 "D1" H 6100 2750 50  0000 C CNN
 F 1 "charging" H 6100 2670 50  0000 C CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 6050 2560 50  0001 C CNN
 F 3 "" H 6050 2560 50  0001 C CNN
@@ -202,10 +202,10 @@ F 3 "" H 5860 2660 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L agg-kicad:LED green1
+L agg-kicad:LED D2
 U 1 1 59DA7F2A
 P 6050 2660
-F 0 "green1" H 6110 2600 50  0000 C CNN
+F 0 "D2" H 6110 2600 50  0000 C CNN
 F 1 "done" H 6100 2530 50  0000 C CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 6050 2660 50  0001 C CNN
 F 3 "" H 6050 2660 50  0001 C CNN
@@ -450,13 +450,13 @@ F 3 "" H 3750 6130 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1630 1410 2220 1410
+	1630 1410 2000 1410
 Wire Wire Line
 	2000 1410 2000 1440
 Wire Wire Line
-	1630 1810 2000 1810
+	1630 1810 1750 1810
 Wire Wire Line
-	2000 1640 2000 1870
+	2000 1640 2000 1750
 Wire Wire Line
 	1630 1910 1750 1910
 Wire Wire Line
@@ -466,7 +466,7 @@ Connection ~ 2000 1810
 Wire Wire Line
 	4960 1130 4960 1260
 Wire Wire Line
-	3710 1220 3710 1380
+	3710 1220 3710 1300
 Wire Wire Line
 	3710 920  3710 1020
 Wire Wire Line
@@ -474,7 +474,7 @@ Wire Wire Line
 Wire Wire Line
 	4260 1760 4180 1760
 Wire Wire Line
-	5660 1860 6640 1860
+	5660 1860 5880 1860
 Wire Wire Line
 	6480 1860 6480 1920
 Wire Wire Line
@@ -488,7 +488,7 @@ Connection ~ 6160 1860
 Wire Wire Line
 	4960 3060 4960 3130
 Wire Wire Line
-	6480 2220 6480 2310
+	6480 2220 6480 2270
 Wire Wire Line
 	6160 2180 6160 2270
 Wire Wire Line
@@ -509,14 +509,14 @@ Wire Wire Line
 Wire Wire Line
 	6150 2560 6220 2560
 Wire Wire Line
-	6220 2560 6220 2660
+	6220 2560 6220 2610
 Wire Wire Line
 	6220 2610 6340 2610
 Wire Wire Line
 	6220 2660 6150 2660
 Connection ~ 6220 2610
 Wire Wire Line
-	4050 2560 4260 2560
+	4050 2560 4160 2560
 Wire Wire Line
 	4260 1560 4090 1560
 Wire Wire Line
@@ -533,7 +533,7 @@ Wire Wire Line
 Wire Wire Line
 	3860 1940 3710 1940
 Wire Wire Line
-	3710 1940 3710 2440
+	3710 1940 3710 2160
 Wire Wire Line
 	3860 2160 3710 2160
 Connection ~ 3710 2160
@@ -552,7 +552,7 @@ Wire Wire Line
 Wire Wire Line
 	6390 1410 6390 1470
 Wire Wire Line
-	5890 1410 6740 1410
+	5890 1410 6150 1410
 Wire Wire Line
 	6150 1410 6150 1470
 Wire Wire Line
@@ -562,7 +562,7 @@ Connection ~ 6390 1410
 Wire Wire Line
 	6150 1670 6150 1720
 Wire Wire Line
-	6150 1720 6390 1720
+	6150 1720 6260 1720
 Wire Wire Line
 	6390 1720 6390 1670
 Wire Wire Line
@@ -571,16 +571,16 @@ Connection ~ 6260 1720
 Wire Wire Line
 	3300 5600 3160 5600
 Wire Wire Line
-	3300 4900 3110 4900
+	3300 4900 3200 4900
 Wire Wire Line
 	3300 5000 3200 5000
 Wire Wire Line
 	3200 5000 3200 4900
 Connection ~ 3200 4900
 Wire Wire Line
-	1860 4900 2910 4900
+	1860 4900 2080 4900
 Wire Wire Line
-	2840 4900 2840 5070
+	2840 4900 2840 5040
 Connection ~ 2840 4900
 Wire Wire Line
 	3300 5200 3140 5200
@@ -590,7 +590,7 @@ Wire Wire Line
 	3140 5040 2840 5040
 Connection ~ 2840 5040
 Wire Wire Line
-	2750 5300 3300 5300
+	2750 5300 2840 5300
 Wire Wire Line
 	2840 5300 2840 5270
 Connection ~ 2840 5300
@@ -598,7 +598,7 @@ Wire Wire Line
 	2330 5170 2330 4900
 Connection ~ 2330 4900
 Wire Wire Line
-	2330 5370 2330 5470
+	2330 5370 2330 5400
 Wire Wire Line
 	3300 5400 2330 5400
 Connection ~ 2330 5400
@@ -607,11 +607,11 @@ Wire Wire Line
 Wire Wire Line
 	4100 5400 4400 5400
 Wire Wire Line
-	4100 4900 6270 4900
+	4100 4900 4260 4900
 Wire Wire Line
 	4100 5000 4260 5000
 Wire Wire Line
-	4260 4900 4260 5100
+	4260 4900 4260 5000
 Connection ~ 4260 4900
 Wire Wire Line
 	4260 5100 4100 5100
@@ -620,7 +620,7 @@ Wire Wire Line
 	4640 5020 4640 4900
 Connection ~ 4640 4900
 Wire Wire Line
-	4640 5350 4640 5220
+	4640 5350 4640 5300
 Wire Wire Line
 	4640 5550 4640 5610
 Wire Wire Line
@@ -640,7 +640,7 @@ Connection ~ 5020 4900
 Wire Wire Line
 	5020 5200 5020 5270
 Wire Wire Line
-	5020 5270 5430 5270
+	5020 5270 5200 5270
 Wire Wire Line
 	5430 5270 5430 5200
 Wire Wire Line
@@ -752,7 +752,7 @@ U 1 1 59FD2D5E
 P 4400 5400
 F 0 "TP2" H 4380 5330 50  0000 L CNN
 F 1 "TESTPAD" H 4400 5325 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 4400 5250 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 4400 5250 50  0001 L CNN
 F 3 "" H 4400 5400 50  0001 C CNN
 	1    4400 5400
 	1    0    0    -1  
@@ -763,7 +763,7 @@ U 1 1 59FD7F8A
 P 6740 1410
 F 0 "TP4" H 6838 1410 50  0000 L CNN
 F 1 "TESTPAD" H 6740 1335 50  0001 L CNN
-F 2 "agg:TESTPAD" H 6740 1260 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6740 1260 50  0001 L CNN
 F 3 "" H 6740 1410 50  0001 C CNN
 	1    6740 1410
 	1    0    0    -1  
@@ -774,7 +774,7 @@ U 1 1 59FD88E1
 P 2220 1410
 F 0 "TP1" H 2318 1410 50  0000 L CNN
 F 1 "TESTPAD" H 2220 1335 50  0001 L CNN
-F 2 "agg:TESTPAD" H 2220 1260 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 2220 1260 50  0001 L CNN
 F 3 "" H 2220 1410 50  0001 C CNN
 	1    2220 1410
 	1    0    0    -1  
@@ -786,7 +786,7 @@ U 1 1 59FDA6BA
 P 6640 1860
 F 0 "TP3" H 6738 1860 50  0000 L CNN
 F 1 "TESTPAD" H 6640 1785 50  0001 L CNN
-F 2 "agg:TESTPAD" H 6640 1710 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6640 1710 50  0001 L CNN
 F 3 "" H 6640 1860 50  0001 C CNN
 	1    6640 1860
 	1    0    0    -1  
@@ -818,7 +818,7 @@ The thermistor has a bizarre PCB trace because \nI didn't want to break up the g
 Wire Wire Line
 	3500 6000 3500 6070
 Wire Wire Line
-	3500 6070 3900 6070
+	3500 6070 3600 6070
 Wire Wire Line
 	3900 6070 3900 6000
 Wire Wire Line
@@ -844,4 +844,72 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps61090.pdf" H 3850 4250 50  0001 L CNN
 	1    3700 5400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1750 1810 2000 1810
+Wire Wire Line
+	2000 1810 2000 1870
+Wire Wire Line
+	5880 1860 6160 1860
+Wire Wire Line
+	6160 1860 6480 1860
+Wire Wire Line
+	6480 2270 6480 2310
+Wire Wire Line
+	6220 2610 6220 2660
+Wire Wire Line
+	3710 1300 3710 1380
+Wire Wire Line
+	3710 2160 3710 2360
+Wire Wire Line
+	4160 2560 4260 2560
+Wire Wire Line
+	3710 2360 3710 2440
+Wire Wire Line
+	6150 1410 6390 1410
+Wire Wire Line
+	6390 1410 6740 1410
+Wire Wire Line
+	6260 1720 6390 1720
+Wire Wire Line
+	3200 4900 3110 4900
+Wire Wire Line
+	2840 4900 2910 4900
+Wire Wire Line
+	2840 5040 2840 5070
+Wire Wire Line
+	2840 5300 3300 5300
+Wire Wire Line
+	2330 4900 2840 4900
+Wire Wire Line
+	2330 5400 2330 5470
+Wire Wire Line
+	4260 4900 4640 4900
+Wire Wire Line
+	4260 5000 4260 5100
+Wire Wire Line
+	4640 4900 5020 4900
+Wire Wire Line
+	4640 5300 4640 5220
+Wire Wire Line
+	2080 4900 2330 4900
+Wire Wire Line
+	5430 4900 6270 4900
+Wire Wire Line
+	5020 4900 5430 4900
+Wire Wire Line
+	5200 5270 5430 5270
+Wire Wire Line
+	2000 1410 2220 1410
+Wire Wire Line
+	6480 1860 6640 1860
+Wire Wire Line
+	2000 1750 2000 1810
+Wire Wire Line
+	3600 6070 3700 6070
+Wire Wire Line
+	3700 6070 3750 6070
+Wire Wire Line
+	3800 6070 3900 6070
+Wire Wire Line
+	3750 6070 3800 6070
 $EndSCHEMATC

@@ -322,17 +322,17 @@ $EndComp
 Text Label 1860 4900 2    30   ~ 0
 Vout
 $Comp
-L device:R_Small R3
+L device:R_Small ROn3
 U 1 1 59EE2E52
 P 2840 5170
-F 0 "R3" H 2899 5216 50  0000 L CNN
+F 0 "ROn3" H 2899 5216 50  0000 L CNN
 F 1 "200k" H 2899 5125 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2840 5170 50  0001 C CNN
 F 3 "" H 2840 5170 50  0001 C CNN
 	1    2840 5170
 	1    0    0    -1  
 $EndComp
-Text Label 2750 5300 2    30   ~ 0
+Text Label 2720 5300 2    30   ~ 0
 enable
 $Comp
 L agg-kicad:GND #PWR07
@@ -589,8 +589,6 @@ Wire Wire Line
 Wire Wire Line
 	3140 5040 2840 5040
 Connection ~ 2840 5040
-Wire Wire Line
-	2750 5300 2840 5300
 Wire Wire Line
 	2840 5300 2840 5270
 Connection ~ 2840 5300
@@ -912,4 +910,37 @@ Wire Wire Line
 	3800 6070 3900 6070
 Wire Wire Line
 	3750 6070 3800 6070
+$Comp
+L device:R_Small ROff3
+U 1 1 5B1032CA
+P 2770 5550
+F 0 "ROff3" H 2829 5596 50  0000 L CNN
+F 1 "200k" H 2829 5505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2770 5550 50  0001 C CNN
+F 3 "" H 2770 5550 50  0001 C CNN
+	1    2770 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2770 5450 2770 5300
+Connection ~ 2770 5300
+Wire Wire Line
+	2770 5300 2840 5300
+Wire Wire Line
+	2720 5300 2770 5300
+$Comp
+L agg-kicad:GND #PWR0101
+U 1 1 5B1121D5
+P 2770 5720
+F 0 "#PWR0101" H 2640 5760 50  0001 L CNN
+F 1 "GND" H 2770 5587 50  0000 C CNN
+F 2 "" H 2770 5720 50  0001 C CNN
+F 3 "" H 2770 5720 50  0001 C CNN
+	1    2770 5720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2770 5650 2770 5720
+Text Notes 1510 6100 0    50   ~ 0
+Populate ROn3 to have the output on normally.\nPopulate ROff3 to have the output off normally.
 $EndSCHEMATC

@@ -322,17 +322,17 @@ $EndComp
 Text Label 1860 4900 2    30   ~ 0
 Vout
 $Comp
-L device:R_Small R3
+L device:R_Small R3On
 U 1 1 59EE2E52
 P 2840 5170
-F 0 "R3" H 2899 5216 50  0000 L CNN
+F 0 "R3On" H 2899 5216 50  0000 L CNN
 F 1 "200k" H 2899 5125 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2840 5170 50  0001 C CNN
 F 3 "" H 2840 5170 50  0001 C CNN
 	1    2840 5170
 	1    0    0    -1  
 $EndComp
-Text Label 2750 5300 2    30   ~ 0
+Text Label 2720 5300 2    30   ~ 0
 enable
 $Comp
 L agg-kicad:GND #PWR07
@@ -590,8 +590,6 @@ Wire Wire Line
 	3140 5040 2840 5040
 Connection ~ 2840 5040
 Wire Wire Line
-	2750 5300 2840 5300
-Wire Wire Line
 	2840 5300 2840 5270
 Connection ~ 2840 5300
 Wire Wire Line
@@ -763,7 +761,7 @@ U 1 1 59FD7F8A
 P 6740 1410
 F 0 "TP4" H 6838 1410 50  0000 L CNN
 F 1 "TESTPAD" H 6740 1335 50  0001 L CNN
-F 2 "agg:TESTPAD" H 6740 1260 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6740 1260 50  0001 L CNN
 F 3 "" H 6740 1410 50  0001 C CNN
 	1    6740 1410
 	1    0    0    -1  
@@ -774,7 +772,7 @@ U 1 1 59FD88E1
 P 2220 1410
 F 0 "TP1" H 2318 1410 50  0000 L CNN
 F 1 "TESTPAD" H 2220 1335 50  0001 L CNN
-F 2 "agg:TESTPAD" H 2220 1260 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 2220 1260 50  0001 L CNN
 F 3 "" H 2220 1410 50  0001 C CNN
 	1    2220 1410
 	1    0    0    -1  
@@ -786,7 +784,7 @@ U 1 1 59FDA6BA
 P 6640 1860
 F 0 "TP3" H 6738 1860 50  0000 L CNN
 F 1 "TESTPAD" H 6640 1785 50  0001 L CNN
-F 2 "agg:TESTPAD" H 6640 1710 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Big" H 6640 1710 50  0001 L CNN
 F 3 "" H 6640 1860 50  0001 C CNN
 	1    6640 1860
 	1    0    0    -1  
@@ -912,4 +910,37 @@ Wire Wire Line
 	3800 6070 3900 6070
 Wire Wire Line
 	3750 6070 3800 6070
+$Comp
+L device:R_Small R3Off
+U 1 1 5B1032CA
+P 2770 5550
+F 0 "R3Off" H 2829 5596 50  0000 L CNN
+F 1 "200k" H 2829 5505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2770 5550 50  0001 C CNN
+F 3 "" H 2770 5550 50  0001 C CNN
+	1    2770 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2770 5450 2770 5300
+Connection ~ 2770 5300
+Wire Wire Line
+	2770 5300 2840 5300
+Wire Wire Line
+	2720 5300 2770 5300
+$Comp
+L agg-kicad:GND #PWR?
+U 1 1 5B1121D5
+P 2770 5720
+F 0 "#PWR?" H 2640 5760 50  0001 L CNN
+F 1 "GND" H 2770 5587 50  0000 C CNN
+F 2 "" H 2770 5720 50  0001 C CNN
+F 3 "" H 2770 5720 50  0001 C CNN
+	1    2770 5720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2770 5650 2770 5720
+Text Notes 1510 6100 0    50   ~ 0
+Populate R3On to have the output on normally.\nPopulate R3Off to have the output off normally.
 $EndSCHEMATC

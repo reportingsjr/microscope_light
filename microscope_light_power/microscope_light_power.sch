@@ -234,7 +234,7 @@ U 1 1 59DBA795
 P 4000 2360
 F 0 "TH1" V 4060 2550 50  0000 C CNN
 F 1 "10k" V 3890 2560 50  0000 C CNN
-F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" H 4000 2410 50  0001 C CNN
+F 2 "Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled" H 4000 2410 50  0001 C CNN
 F 3 "" H 4000 2410 50  0001 C CNN
 	1    4000 2360
 	0    1    1    0   
